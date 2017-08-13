@@ -2,7 +2,7 @@ FROM debian:latest
 
 # inspired by http://kuehnast.com/s9y/archives/657-Manage-your-IKEA-TRDFRI-smart-lighting-system-with-Linux.html
 RUN apt-get update -y && \
-  apt-get install -y python3 python3-pip git libtool autoconf automake build-essential && \
+  apt-get install -y python python-pip git libtool autoconf automake build-essential && \
   git clone --recursive https://github.com/obgm/libcoap.git && \
   cd libcoap && \
   git checkout dtls && \
