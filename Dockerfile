@@ -12,5 +12,7 @@ RUN apt-get update -y && \
   make && \
   make install && \
   pip install tqdm && \
-  cd && \
+  cd / && \
   git clone https://github.com/schliflo/ikea-smartlight.git
+  
+WORKDIR /ikea-smartlight
